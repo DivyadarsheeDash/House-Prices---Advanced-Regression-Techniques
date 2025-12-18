@@ -1,83 +1,150 @@
-Data fields
-Here's a brief version of what you'll find in the data description file.
+# 🏠 House Prices – Advanced Regression Techniques
 
-SalePrice - the property's sale price in dollars. This is the target variable that you're trying to predict.
-MSSubClass: The building class
-MSZoning: The general zoning classification
-LotFrontage: Linear feet of street connected to property
-LotArea: Lot size in square feet
-Street: Type of road access
-Alley: Type of alley access
-LotShape: General shape of property
-LandContour: Flatness of the property
-Utilities: Type of utilities available
-LotConfig: Lot configuration
-LandSlope: Slope of property
-Neighborhood: Physical locations within Ames city limits
-Condition1: Proximity to main road or railroad
-Condition2: Proximity to main road or railroad (if a second is present)
-BldgType: Type of dwelling
-HouseStyle: Style of dwelling
-OverallQual: Overall material and finish quality
-OverallCond: Overall condition rating
-YearBuilt: Original construction date
-YearRemodAdd: Remodel date
-RoofStyle: Type of roof
-RoofMatl: Roof material
-Exterior1st: Exterior covering on house
-Exterior2nd: Exterior covering on house (if more than one material)
-MasVnrType: Masonry veneer type
-MasVnrArea: Masonry veneer area in square feet
-ExterQual: Exterior material quality
-ExterCond: Present condition of the material on the exterior
-Foundation: Type of foundation
-BsmtQual: Height of the basement
-BsmtCond: General condition of the basement
-BsmtExposure: Walkout or garden level basement walls
-BsmtFinType1: Quality of basement finished area
-BsmtFinSF1: Type 1 finished square feet
-BsmtFinType2: Quality of second finished area (if present)
-BsmtFinSF2: Type 2 finished square feet
-BsmtUnfSF: Unfinished square feet of basement area
-TotalBsmtSF: Total square feet of basement area
-Heating: Type of heating
-HeatingQC: Heating quality and condition
-CentralAir: Central air conditioning
-Electrical: Electrical system
-1stFlrSF: First Floor square feet
-2ndFlrSF: Second floor square feet
-LowQualFinSF: Low quality finished square feet (all floors)
-GrLivArea: Above grade (ground) living area square feet
-BsmtFullBath: Basement full bathrooms
-BsmtHalfBath: Basement half bathrooms
-FullBath: Full bathrooms above grade
-HalfBath: Half baths above grade
-Bedroom: Number of bedrooms above basement level
-Kitchen: Number of kitchens
-KitchenQual: Kitchen quality
-TotRmsAbvGrd: Total rooms above grade (does not include bathrooms)
-Functional: Home functionality rating
-Fireplaces: Number of fireplaces
-FireplaceQu: Fireplace quality
-GarageType: Garage location
-GarageYrBlt: Year garage was built
-GarageFinish: Interior finish of the garage
-GarageCars: Size of garage in car capacity
-GarageArea: Size of garage in square feet
-GarageQual: Garage quality
-GarageCond: Garage condition
-PavedDrive: Paved driveway
-WoodDeckSF: Wood deck area in square feet
-OpenPorchSF: Open porch area in square feet
-EnclosedPorch: Enclosed porch area in square feet
-3SsnPorch: Three season porch area in square feet
-ScreenPorch: Screen porch area in square feet
-PoolArea: Pool area in square feet
-PoolQC: Pool quality
-Fence: Fence quality
-MiscFeature: Miscellaneous feature not covered in other categories
-MiscVal: $Value of miscellaneous feature
-MoSold: Month Sold
-YrSold: Year Sold
-SaleType: Type of sale
-SaleCondition: Condition of sale
+## 📌 Competition Description
+Ask a home buyer to describe their dream house, and they probably won’t begin with the height of the basement ceiling or proximity to a railroad.  
+However, this dataset shows that many subtle factors influence house prices beyond bedrooms and curb appeal.
+
+This competition uses **79 explanatory variables** describing nearly every aspect of residential homes in Ames, Iowa, to predict the final **SalePrice**.
+
+---
+
+## 🎯 Goal
+Predict the **SalePrice** (in USD) for each house in the test set.
+
+---
+
+## 📏 Evaluation Metric
+Submissions are evaluated using **Root Mean Squared Error (RMSE)** between the **logarithm of the predicted value** and the **logarithm of the observed sale price**.
+
+Using logarithms ensures that errors in predicting expensive and inexpensive houses are weighted equally.
+
+---
+
+## 🧠 Skills Practiced
+- Creative feature engineering
+- Handling missing values
+- Encoding categorical variables
+- Advanced regression techniques:
+  - Random Forest
+  - Gradient Boosting
+
+---
+
+## 🚀 Start Here If…
+- You have basic experience with **Python or R**
+- You understand **machine learning fundamentals**
+- You’ve completed an online ML course and want hands-on practice before entering featured Kaggle competitions
+
+A starter notebook is provided to help you get started quickly.
+
+---
+
+## 📊 Dataset Description
+
+### 🎯 Target Variable
+- **SalePrice** — Property sale price in dollars
+
+---
+
+### 🏗️ Property & Lot Information
+- **MSSubClass** — Building class  
+- **MSZoning** — Zoning classification  
+- **LotFrontage** — Linear feet of street connected to property  
+- **Street** — Type of road access  
+- **Alley** — Type of alley access  
+- **LotShape** — General shape of property  
+- **LandContour** — Flatness of the property  
+- **Utilities** — Utilities available  
+- **LotConfig** — Lot configuration  
+- **LandSlope** — Slope of property  
+- **Neighborhood** — Physical location within Ames city limits  
+
+---
+
+### 🏠 Building Characteristics
+- **BldgType** — Type of dwelling  
+- **HouseStyle** — Style of dwelling  
+- **OverallQual** — Overall material and finish quality  
+- **OverallCond** — Overall condition rating  
+- **YearBuilt** — Original construction year  
+- **YearRemodAdd** — Remodel year  
+- **RoofStyle** — Roof style  
+- **RoofMatl** — Roof material  
+- **Exterior1st** — Exterior covering  
+- **Exterior2nd** — Secondary exterior covering  
+
+---
+
+### 🧱 Basement
+- **BsmtQual** — Basement height  
+- **BsmtCond** — Basement condition  
+- **BsmtExposure** — Walkout or garden level  
+- **BsmtFinType1** — Finished basement quality  
+- **BsmtFinSF1** — Finished square feet  
+- **BsmtFinType2** — Second finished area quality  
+- **BsmtFinSF2** — Second finished square feet  
+- **BsmtUnfSF** — Unfinished basement area  
+- **TotalBsmtSF** — Total basement area  
+
+---
+
+### 🛋️ Interior Living Area
+- **1stFlrSF** — First floor area  
+- **2ndFlrSF** — Second floor area  
+- **LowQualFinSF** — Low quality finished area  
+- **GrLivArea** — Above-grade living area  
+- **Bedroom** — Bedrooms above basement  
+- **Kitchen** — Number of kitchens  
+- **KitchenQual** — Kitchen quality  
+- **TotRmsAbvGrd** — Total rooms above grade  
+
+---
+
+### 🔥 Utilities & Comfort
+- **Heating** — Heating type  
+- **HeatingQC** — Heating quality  
+- **CentralAir** — Central air conditioning  
+- **Electrical** — Electrical system  
+- **Fireplaces** — Number of fireplaces  
+- **FireplaceQu** — Fireplace quality  
+
+---
+
+### 🚗 Garage
+- **GarageType** — Garage location  
+- **GarageYrBlt** — Garage construction year  
+- **GarageFinish** — Interior finish  
+- **GarageCars** — Garage capacity  
+- **GarageArea** — Garage size  
+- **GarageQual** — Garage quality  
+- **GarageCond** — Garage condition  
+
+---
+
+### 🌳 Outdoor & Miscellaneous
+- **WoodDeckSF** — Wood deck area  
+- **OpenPorchSF** — Open porch area  
+- **EnclosedPorch** — Enclosed porch  
+- **3SsnPorch** — Three-season porch  
+- **ScreenPorch** — Screen porch  
+- **PoolArea** — Pool area  
+- **PoolQC** — Pool quality  
+- **Fence** — Fence quality  
+- **MiscFeature** — Miscellaneous feature  
+- **MiscVal** — Value of miscellaneous features  
+
+---
+
+### 🗓️ Sale Details
+- **MoSold** — Month sold  
+- **YrSold** — Year sold  
+- **SaleType** — Type of sale  
+- **SaleCondition** — Condition of sale  
+
+---
+
+## 🙏 Acknowledgments
+The Ames Housing dataset was compiled by **Dean De Cock** for use in data science education.  
+It serves as a modern alternative to the Boston Housing dataset.
+
+Photo by **Tom Thain** on Unsplash.
