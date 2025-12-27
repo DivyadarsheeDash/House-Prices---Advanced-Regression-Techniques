@@ -27,7 +27,7 @@
 <h2>🏆 Kaggle Achievement</h2>
 
 <p>
-  <img src="images/leaderboard.png" alt="Kaggle Leaderboard Result" />
+  <img src="images/leaderboard1.png" alt="Kaggle Leaderboard Result" />
 </p>
 
 <ul>
