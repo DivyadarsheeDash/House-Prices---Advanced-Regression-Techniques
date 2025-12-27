@@ -1,31 +1,37 @@
-🛠️ My Approach
+<h2>🛠️ My Approach</h2>
 
-Performed careful missing value analysis, distinguishing between true missing data and absence-based features (e.g., Alley, PoolQC, Fence).
+<ul>
+  <li>Performed careful missing value analysis, distinguishing between true missing data and absence-based features (e.g., Alley, PoolQC, Fence).</li>
 
-Filled absence-based categorical features explicitly with "None" to preserve semantic meaning.
+  <li>Filled absence-based categorical features explicitly with <code>"None"</code> to preserve semantic meaning.</li>
 
-Applied median imputation for numerical features and most-frequent strategy for remaining categorical features.
+  <li>Applied median imputation for numerical features and most-frequent strategy for remaining categorical features.</li>
 
-Converted categorical variables to category dtype and encoded them using OneHotEncoder with handle_unknown="ignore".
+  <li>Converted categorical variables to category dtype and encoded them using OneHotEncoder with <code>handle_unknown="ignore"</code>.</li>
 
-Built a clean preprocessing pipeline using ColumnTransformer.
+  <li>Built a clean preprocessing pipeline using ColumnTransformer.</li>
 
-Trained and compared multiple regression models:
+  <li>Trained and compared multiple regression models:
+    <ul>
+      <li>RandomForestRegressor</li>
+      <li>ExtraTreesRegressor</li>
+      <li>HistGradientBoostingRegressor</li>
+    </ul>
+  </li>
 
-RandomForestRegressor
+  <li>Tuned hyperparameters using GridSearchCV and selected the best model based on cross-validated RMSE.</li>
 
-ExtraTreesRegressor
+  <li>Generated predictions on the test set and created a valid Kaggle submission.</li>
+</ul>
 
-HistGradientBoostingRegressor
+<h2>🏆 Kaggle Achievement</h2>
 
-Tuned hyperparameters using GridSearchCV and selected the best model based on cross-validated RMSE.
+<p>
+  <img src="images/leaderboard.png" alt="Kaggle Leaderboard Result" />
+</p>
 
-Generated predictions on the test set and created a valid Kaggle submission.
-
-🏆 Kaggle Achievement
-
-Public Leaderboard Score: 0.14444
-
-Result: First successful Kaggle submission
-
-Status: Ranked on the leaderboard ✅
+<ul>
+  <li><strong>Public Leaderboard Score:</strong> 0.14444</li>
+  <li><strong>Result:</strong> First successful Kaggle submission</li>
+  <li><strong>Status:</strong> Ranked on the leaderboard ✅</li>
+</ul>
