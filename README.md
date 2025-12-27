@@ -25,5 +25,7 @@ Generated predictions on the test set and created a valid Kaggle submission.
 🏆 Kaggle Achievement
 
 Public Leaderboard Score: 0.14444
+
 Result: First successful Kaggle submission
+
 Status: Ranked on the leaderboard ✅
